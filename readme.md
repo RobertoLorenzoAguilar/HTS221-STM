@@ -83,3 +83,71 @@ lectura continua del ambiente.
 
 ---
 
+Lectura de Sensor HTS221 - STM32 B-U585I-IOT02A
+
+Este proyecto demuestra cómo leer y convertir datos de temperatura y humedad usando el sensor HTS221 en la placa B-U585I-IOT02A, mostrando los resultados por UART.
+
+Flujo del Código - Sensor HTS221
+
+Inicialización:
+
+* El sensor se configura en modo activo a 1 Hz con HTS221\_Init\_Active\_1Hz().
+* Si ocurre un error, se envía un mensaje por UART y el sistema entra en Error\_Handler.
+
+Código:
+if (HTS221\_Init\_Active\_1Hz() != HAL\_OK) {
+print("HTS221 init failed\r\n");
+Error\_Handler();
+}
+
+Calibración:
+
+* Se cargan los coeficientes de temperatura y humedad desde el sensor.
+* Se almacenan en variables globales (gCal, gHumCal) para realizar las conversiones de los valores crudos.
+
+Código:
+if (HTS221\_LoadTempCalibration(\&gCal) != HAL\_OK || gCal.loaded == 0) {
+print("Calib read failed\r\n");
+Error\_Handler();
+}
+
+if (HTS221\_LoadHumCalibration(\&gHumCal) != HAL\_OK || gHumCal.loaded == 0) {
+printf("Error: no se pudo cargar calibración de humedad\r\n");
+Error\_Handler();
+} else {
+printf("Calibración de humedad cargada OK\r\n");
+}
+
+Bucle Principal:
+
+1. Se leen los valores crudos.
+2. Se convierten a unidades físicas: °C y %RH.
+3. Se envían los resultados por UART.
+
+Código:
+while (1) {
+int16\_t t\_raw = 0;
+int16\_t hum\_raw = 0;
+
+```
+if (HTS221_ReadTempRaw(&t_raw) == HAL_OK && HTS221_ReadHumRaw(&hum_raw) == HAL_OK) {
+
+    float t_c = HTS221_ConvertTemp_C(&gCal, t_raw);
+    float hum = HTS221_ConvertHum_RH(&gHumCal, hum_raw);
+
+    char msg[96];
+    snprintf(msg, sizeof(msg),
+             "T_RAW=%d  T=%.2f C  Hum=%.2f %%RH (raw=%d)\r\n",
+             t_raw, t_c, hum, hum_raw);
+
+    print(msg);
+
+} else {
+    print("Read error\r\n");
+}
+
+HAL_Delay(1000); // Frecuencia de muestreo: 1 segundo
+```
+
+}
+
