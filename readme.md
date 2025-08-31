@@ -11,25 +11,6 @@ Gracias por tu comprensión.
 
 ---
 
-## Imágenes del Proyecto
-
-![Imagen 1](https://github.com/user-attachments/assets/f97e6590-3e1a-498a-98dd-7c03f20c243a)
-![Imagen 2](https://github.com/user-attachments/assets/1e915c40-be40-4796-9c23-7c4585eacf3d)
-![Imagen 3](https://github.com/user-attachments/assets/c5fd5a4a-5089-4421-b5b7-f6dd718276e7)
-![Imagen 4](https://github.com/user-attachments/assets/82ac4ed5-0a15-4d7e-9bf1-b14f33355189)
-![Imagen 5](https://github.com/user-attachments/assets/9aaa9c5f-b065-4e2c-90f0-4d1219c27852)
-![Imagen 6](https://github.com/user-attachments/assets/3c806a4b-1fde-4b23-90c0-040063ec292c)
-![Imagen 7](https://github.com/user-attachments/assets/6b528adb-0a3c-4486-b388-b663440805a7)
-![Imagen 8](https://github.com/user-attachments/assets/e643d9a0-e733-4a2b-9eb9-595e39d77e4c)
-
-**Archivos de Código: hts221.c**
-
-![Imagen 9](https://github.com/user-attachments/assets/bb41a8bf-9f8c-4a62-ba5e-9af66b07dc52)
-![Imagen 10](https://github.com/user-attachments/assets/d8ce6ce6-e48c-4b69-93c0-15b6dd12cf14)
-![Imagen 11](https://github.com/user-attachments/assets/3e0b3e47-8dfa-4c80-9333-4176c39a3d44)
-![Imagen 12](https://github.com/user-attachments/assets/b56f8bc2-0948-4d58-8551-75020f05595f)
-
----
 
 # Flujo del Código - Sensor HTS221
 
@@ -113,3 +94,24 @@ print(msg);
 ---
 
 Este proyecto muestra cómo leer y convertir datos de temperatura y humedad usando el sensor **HTS221** en la placa **B-U585I-IOT02A**, mostrando los resultados por UART.
+---
+
+## Imágenes del Proyecto
+
+![Imagen 1](https://github.com/user-attachments/assets/f97e6590-3e1a-498a-98dd-7c03f20c243a)
+![Imagen 2](https://github.com/user-attachments/assets/1e915c40-be40-4796-9c23-7c4585eacf3d)
+![Imagen 3](https://github.com/user-attachments/assets/c5fd5a4a-5089-4421-b5b7-f6dd718276e7)
+![Imagen 4](https://github.com/user-attachments/assets/82ac4ed5-0a15-4d7e-9bf1-b14f33355189)
+![Imagen 5](https://github.com/user-attachments/assets/9aaa9c5f-b065-4e2c-90f0-4d1219c27852)
+![Imagen 6](https://github.com/user-attachments/assets/3c806a4b-1fde-4b23-90c0-040063ec292c)
+![Imagen 7](https://github.com/user-attachments/assets/6b528adb-0a3c-4486-b388-b663440805a7)
+![Imagen 8](https://github.com/user-attachments/assets/e643d9a0-e733-4a2b-9eb9-595e39d77e4c)
+
+**Archivos de Código: hts221.c**
+
+![Imagen 9](https://github.com/user-attachments/assets/bb41a8bf-9f8c-4a62-ba5e-9af66b07dc52)
+![Imagen 10](https://github.com/user-attachments/assets/d8ce6ce6-e48c-4b69-93c0-15b6dd12cf14)
+![Imagen 11](https://github.com/user-attachments/assets/3e0b3e47-8dfa-4c80-9333-4176c39a3d44)
+![Imagen 12](https://github.com/user-attachments/assets/b56f8bc2-0948-4d58-8551-75020f05595f)
+
+---
