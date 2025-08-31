@@ -25,3 +25,18 @@ Gracias por tu comprensión.
 
 
 <img width="821" height="603" alt="image" src="https://github.com/user-attachments/assets/3c806a4b-1fde-4b23-90c0-040063ec292c" />
+
+<img width="914" height="743" alt="image" src="https://github.com/user-attachments/assets/6b528adb-0a3c-4486-b388-b663440805a7" />
+<img width="1198" height="752" alt="image" src="https://github.com/user-attachments/assets/e643d9a0-e733-4a2b-9eb9-595e39d77e4c" />
+
+hts221.c
+<img width="1191" height="760" alt="image" src="https://github.com/user-attachments/assets/bb41a8bf-9f8c-4a62-ba5e-9af66b07dc52" />
+<img width="707" height="514" alt="image" src="https://github.com/user-attachments/assets/d8ce6ce6-e48c-4b69-93c0-15b6dd12cf14" />
+
+<img width="857" height="535" alt="image" src="https://github.com/user-attachments/assets/3e0b3e47-8dfa-4c80-9333-4176c39a3d44" />
+
+<img width="785" height="714" alt="image" src="https://github.com/user-attachments/assets/b56f8bc2-0948-4d58-8551-75020f05595f" />
+
+
+
+
