@@ -17,3 +17,6 @@ Gracias por tu comprensión.
 <img width="616" height="601" alt="image" src="https://github.com/user-attachments/assets/1e915c40-be40-4796-9c23-7c4585eacf3d" />
 
 
+<img width="536" height="602" alt="image" src="https://github.com/user-attachments/assets/c5fd5a4a-5089-4421-b5b7-f6dd718276e7" />
+
+<img width="536" height="602" alt="image" src="https://github.com/user-attachments/assets/9273b275-4090-40bd-b6be-9077b8d0b94e" />
