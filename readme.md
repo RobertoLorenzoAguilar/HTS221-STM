@@ -40,3 +40,46 @@ hts221.c
 
 
 
+
+# Flujo del Código - Sensor HTS221
+
+Este documento resume el flujo del programa **main.c** en lo relacionado al
+sensor de **temperatura y humedad HTS221** en la placa B-U585I-IOT02A.
+
+---
+
+##  Inicialización
+
+- El sensor se configura en **modo activo a 1 Hz** con `HTS221_Init_Active_1Hz()`.
+- Si ocurre un error, se envía un mensaje por UART y el sistema entra en
+`Error_Handler`.
+
+---
+
+##  Calibración
+
+- Se cargan los coeficientes de **temperatura** y **humedad** desde el sensor.
+- Se almacenan en variables globales (`gCal`, `gHumCal`) para realizar las
+conversiones de los valores crudos.
+
+---
+
+##  Bucle Principal
+
+1. Se leen los valores crudos:
+   - `HTS221_ReadTempRaw(&t_raw)`
+   - `HTS221_ReadHumRaw(&hum_raw)`
+2. Se convierten a unidades físicas:
+   - Temperatura en °C → `HTS221_ConvertTemp_C(&gCal, t_raw)`
+   - Humedad relativa en %RH → `HTS221_ConvertHum_RH(&gHumCal, hum_raw)`
+3. Se envían los resultados por **UART** para monitoreo en consola.
+
+---
+
+##  Frecuencia de muestreo
+
+- El bucle se repite cada **1 segundo** (`HAL_Delay(1000)`), permitiendo una
+lectura continua del ambiente.
+
+---
+
