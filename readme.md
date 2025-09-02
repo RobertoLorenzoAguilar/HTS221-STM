@@ -132,6 +132,8 @@ typedef struct {
 
 
 
+---
+
 
 ## Imágenes del Proyecto
 
