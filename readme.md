@@ -98,42 +98,6 @@ Este proyecto muestra cómo leer y convertir datos de temperatura y humedad usan
 
 
 
-# HTS221 Humedad - STM32
-
-Este repositorio contiene el código para **lectura y conversión de humedad relativa** usando el sensor **HTS221** en microcontroladores STM32.
-
-## Descripción
-
-El módulo permite:
-
-- Cargar los **coeficientes de calibración** de humedad desde el sensor.
-- Leer valores crudos de humedad.
-- Convertir los valores crudos a:
-  - **%RH** (float)
-  - **%RH × 10** (int) para uso sin punto flotante.
-
-> ⚠️ Requiere que la función `_mem_read` esté implementada para leer registros I2C del HTS221.
-
-## Archivos
-
-- `humedad.h` – Definiciones, estructuras y prototipos de funciones.
-- `humedad.c` – Implementación de las funciones de lectura y conversión de humedad.
-
-## Estructura de calibración
-
-```c
-typedef struct {
-    int16_t H0_T0_OUT; // Valor crudo correspondiente a H0_rH
-    int16_t H1_T0_OUT; // Valor crudo correspondiente a H1_rH
-    float   H0_rH;     // Humedad relativa H0 (%)
-    float   H1_rH;     // Humedad relativa H1 (%)
-    uint8_t loaded;    // Flag que indica si los coeficientes están cargados
-} HTS221_HCalib_t;
-
-
-
----
-
 
 ## Imágenes del Proyecto
 
